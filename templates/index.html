@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/static/reset.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="/static/styles.css" rel="stylesheet">
+  <title>YourFaroe</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">YourFaroe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Головна</a>
+            <a class="nav-link" href="#program">Тур</a>
+            <a class="nav-link" href="#about">Про проект</a>
+            <a class="nav-link" href="#cost">Вартість</a>
+            <a class="nav-link" href="#schedule">Календар</a>
+            <a class="nav-link" href="#contact">Контакти</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section>
+      <div class="bcground">
+        <div class="description">
+          <h1>Фарерські острови</h1>
+          <br>
+          <br>
+          <p>Незабутня відпустка серед скель, водоспадів та безкрайнього океану. Літати на вертольоті. Милуватися
+            красою
+            атлантичних птахів. Рибалити у фіордах. Подорож як на картинках. Навіть краще — це станеться з вами!</p>
+          <br>
+          <br>
+
+          <p><strong>15-22 вересня 2022 | 2000 &#8364;</strong></p>
+          <br>
+          <br>
+          <button class="open-button" onclick="openForm()">Подати заявку</button>
+
+          <div class="form-popup" id="myForm4">
+            <form method="post" class="form-container">
+              <h3>Заповніть форму</h3>
+              <p>Ми відповімо протягом двох хвилин</p>
+
+              <label for="name1">Ім'я:</label>
+              <input type="text" placeholder="Ваше ім'я" name="name" id="name1" pattern="^[а-яА-ЯёЁіІїЇa-zA-Z]+$"
+                maxlength="50" required>
+
+              <label for="phone1">Телефон:</label>
+              <input type="tel" placeholder="Ваш номер телефону у форматі 380yyxxxxxxx" name="phone" id="phone1"
+                pattern="380[0-9]{9}"
+                title="Будь ласка, введіть номер телефону у форматі 380yyxxxxxxx, де y - двохзначний код мобільного оператора, x - семизначний номер телефону"
+                required>
+
+              <label for="mail1">Email:</label>
+              <input type="email" placeholder="Ваш Email" name="mail" id="mail1"
+                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" maxlength="50" required>
+
+              <button type="submit" class="btn">Подати заявку</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Закрити</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+
+    <div class="container">
+
+      <section id="program">
+        <div class="card mb-3">
+          <h2>Де ми подорожуватимемо</h2>
+          <p>Гортайте фотографії та надихайтеся! Всі ці місця побачимо та відчуємо за 8 днів подорожі.</p>
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="static/img/sorvagsvatn.jpg" class="d-block w-70 mx-auto img-fluid"
+                  alt="Сорвагсватн - озеро над океаном" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Сорвагсватн - озеро над океаном</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/mulafossur.jpg" class="d-block w-70 mx-auto img-fluid" alt="Водоспад Гасадалур"
+                  loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Водоспад Гасадалур</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/tinganes.jpg" class="d-block w-70 mx-auto img-fluid" alt="Місто Торсхавн"
+                  loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Місто Торсхавн і Тінганес, найстарший у світі парламент</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/gjogv.jpg" class="d-block w-70 mx-auto img-fluid" alt="Село 
+              Гьогв" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Яскраві села островів Стреймой та Естурой</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/puffins.jpg" class="d-block w-70 mx-auto img-fluid"
+                  alt="Побуваємо на пташиному острові Скувой і побачимо тисячі тупиків" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Побуваємо на пташиному острові Скувой і побачимо тисячі тупиків</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/helicopter.jpg" class="d-block w-70 mx-auto img-fluid"
+                  alt="Політаємо вертольотом над островами" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Політаємо вертольотом над островами</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/salmon.jpg" class="d-block w-70 mx-auto img-fluid"
+                  alt="Вийдемо в море з рибалками, ловитимемо дикого лосося. Улов потім засмажимо і з'їмо!"
+                  loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Вийдемо в море з рибалками, ловитимемо дикого лосося. Улов потім засмажимо і з'їмо!</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/food.jpg" class="d-block70 mx-auto img-fluid" alt="Атлантична кухня"
+                  loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Спробуємо неповторну атлантичну кухню</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <br>
+
+          <h2>Формат поїздки</h2>
+          <p>Активна подорож із насиченою програмою. Ходитимемо пішки до 10 кілометрів на день. Спеціальна підготовка не
+            потрібна, але ви повинні бути готові до щоденних та тривалих прогулянок на природі. Між островами
+            переміщуємось
+            на поромах, гелікоптері та на 9-місному мінівені, який буде в нашому розпорядженні всі дні поїздки.</p>
+          <h2>Де ми житимемо</h2>
+          <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="static/img/house1.jpg" class="d-block w-70 mx-auto img-fluid"
+                  alt="Сорвагсватн - озеро над океаном" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Затишне сучасне житло</h5>
+                  <p>Фарерські острови – особливе місце на планеті, де все ще мало туристів. І як наслідок, на 18
+                    островах
+                    всього
+                    70 об'єктів розміщення, 50 із яких це кемпінги. Щоб вам було комфортно, ми не пропонуємо жити у
+                    наметах,
+                    а забронювали затишний та великий будинок, у якому легко розміститься вся наша група. Кожен може
+                    мати
+                    свою кімнату.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/house5.jpg" class="d-block w-70 mx-auto img-fluid" alt="Водоспад Гасадалур"
+                  loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Атмосфера і вид</h5>
+                  <p>На цій розкішній віллі є все, що ви можете побажати у будинку для відпочинку. Вона розташована в
+                    мальовничому селі Тьорнувік, де на вас чекає найдивовижніший схід сонця, краєвиди на Різін і
+                    Келлінгін,
+                    пляж для серфінгу, природа і гарні можливості для піших прогулянок.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/house4.jpg" class="d-block w-70 mx-auto img-fluid" alt="Місто Торсхавн"
+                  loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Особистий простір</h5>
+                  <p>Окрім нашої групи, у будинку нікого не буде. У ньому є велика суміщена вітальня та кухня, три
+                    спальні
+                    з
+                    лофтом, дві гарні ванні кімнати, затишна вітальня з гарним видом на горище, коридор та велика тераса
+                    для
+                    ігор та розваг на відкритому повітрі.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/img/house2.jpg" class="d-block w-70 mx-auto img-fluid" alt="Будинок" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Комфорт</h5>
+                  <p>Унікальна вілла має власний стиль. Вона делікатно оформлена з вершини до ніг.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <section id="about">
+        <div class="card mb-3">
+          <h2>Про проект</h2>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="static/img/guide.jpg" class="img-fluid rounded-start" alt="Гід" loading="lazy">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Володимир Хабаров</h5>
+                <p><b>Засновник YourFaroe, гід, письменник</b></p>
+                <p class="card-text"><q>Відпочинок на Фарерах не схожий на типовий відпочинок у нашому класичному
+                    уявленні
+                    цього слова. Це якесь
+                    єднання з природою. Майже повна відсутність людей разом з неймовірної краси пейзажами і неосяжними
+                    просторами
+                    неодмінно занурюють вас у світ безтурботного спокою. І я запрошую вас, хоча б на деякий час, піти
+                    подалі
+                    від
+                    порожніх
+                    проблем і розділити радість єднання з природою.</q></p>
+
+                <p class="card-text">Під час вашої подорожі Фарерами я буду супроводжувати вас протягом усього маршруту,
+                  покажу найкрасивіші
+                  місця
+                  і
+                  розповім цікаві історіі. Стану вашим гідом, водієм, перекладачем, співрозмовником і другом.</p>
+                <p class="card-text">Чому саме ми? Наші подорожі особливі: завжди динамічна захоплююча програма, а не
+                  посиденьки в одному готелі; ретельна підготовка вашої ексклюзивної пригоди; консультації, підтримка та
+                  допомога на всіх етапах підготовки та проведення подорожі; мульти-мовний професійний гід завжди з
+                  вами. Ми провели 50 подорожей Фарерами. Об'їхавши острови вздовж і впоперек, відібравши найкрасивіші
+                  місця,
+                  ми створили цей тур для вас!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <section id="cost">
+        <div class="card mb-3">
+          <h2>Вартість і умови</h2>
+          <p><b>Наступний тур:</b></p>
+          <p><kbd>15-22 вересня 2022 (8 днів) - 2000 &#8364;</kbd></p>
+          <p>Ціна вказана на 1 людину при розміщенні в коттеджі (1-2 людини в кімнаті)</p>
+          <p>У цій групі вільно 2 з 8 місць.</p>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Що включено у вартість
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Проживання у великому котеджі на острові Стреймой 7 ночей 8 днів, можливе розміщення 1 або 2
+                      осіб
+                      у
+                      кімнаті;</li>
+                    <li>Продукти для сніданків на всі дні подорожі;</li>
+                    <li>Супровід групи україномовним гідом-організатором під час усієї подорожі;</li>
+                    <li>Трансфери та щоденний транспортний супровід на 9-місному мінівені з кондиціонером;</li>
+                    <li>Зустріч в аеропорту Фарерських островів (FAE) та трансфер до аеропорту у фінальний день поїздки;
+                    </li>
+                    <li>Вся програма подорожі, активності та вхідні квитки, а саме:
+                      <ul>
+                        <li>Трекінг до озера Сорвагсватн, що нависає над океаном, включаючи екологічний податок;</li>
+                        <li>Екскурсія містом Торсхавн, включаючи історичний квартал Тінганес;</li>
+                        <li>Екскурсійні програми на островах Вагар, Стреймой, Естурой, у тому числі прогулянки та
+                          трекінги,
+                          у
+                          тому числі до водоспаду Фосса;</li>
+                        <li>Відвідування «пташиного» острова Скувой, включаючи трансфери на гелікоптері та поромі;</li>
+                        <li>Організація риболовлі в океані на рибальській шхуні, включаючи приготування впійманої нами
+                          риби
+                          в
+                          ресторані (в цей день обід входить у вартість);</li>
+                        <li>Поїздка на острови Кальсой та Бордой, включаючи поромну переправу та трекінг до маяка
+                          Каллур;
+                        </li>
+                        <li>Допомога у підборі авіаквитків;</li>
+                        <li>Засоби індивідуального захисту (маски та спиртові гелі для рук) на всі дні поїздки – за
+                          необхідності;</li>
+                        <li>Мобільний інтернет - роздаємо Wi-Fi під час подорожі, не потрібно витрачатися на роумінг та
+                          покупку сім-карток.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Оплачується додатково
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Авіаквитки на Фарерські острови і назад (з пересадкою у Копенгагені, ми допоможемо підібрати
+                      оптимальні квитки)</li>
+                    <li>Обіди і вечері (приблизно 70 &#8364; в день на людину)</li>
+                    <li>Фарерська віза, якщо потрібна (35 &#8364;)</li>
+                    <li>Медицинська страховка для мандрівників (10-50 &#8364;)</li>
+                    <li>Сувеніри, особисті витрати</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Як забронювати і оплатити тур
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>До подорожі мрії три кроки:</p>
+                  <ol>
+                    <li>Залиште заявку і вивчіть детальну презентацію майбутньої подорожі.</li>
+                    <li>Обговоріть усі питання з гідом Володимиром. Він розповість усе про подорож і допоможе підібрати
+                      квитки. Можна "зустрітися" по відеозв'язку в Zoom або зідзвонитись по телефону.</li>
+                    <li>Внесіть депозит 30% на рахунок для безготівкової оплати. Решту можна оплатити в день старту
+                      подорожі.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Умови скасування туру
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Обставини змінюються, і ми це розуміємо. Тому у нас діють гнучкі правила відміни броні. Якщо участь
+                    у
+                    поїздці скасовується з вашої ініціативи і стосується лише вас, а до туру залишається більше 35 днів,
+                    ви
+                    можете безкоштовно перенести сплачений депозит для участі у будь-якому іншому турі протягом року.
+                  </p>
+                  <p>Якщо тур переноситься через закриті кордони (як було в 2020 році через пандемію коронавірусу), всій
+                    групі будуть запропоновані нові дати поїздки цим же маршрутом і з тим же набором послуг. Якщо нові
+                    дати
+                    не підійдуть, ви також зможете використовувати депозит для будь-якого іншого туру або повністю
+                    повернути
+                    гроші.</p>
+                  <p>При скасуванні участі з вашого боку менш ніж за 35 днів до початку депозит (30%) не повертається.
+                    Однак, ви можете передати свою броню друзям або рідним, якщо вони готові поїхати в тур замість вас.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <section id="schedule">
+        <div class="card mb-3">
+          <h2>Календар</h2>
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>15 - 22 серпня 2022</td>
+                <td>2000 &#8364;</td>
+                <td>Група набрана</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15 - 22 вересня 2022</td>
+                <td>2000 &#8364;</td>
+                <td>Залишилось 2 місця</td>
+                <td><button class="open-button" onclick="openForm()">Подати заявку</button>
+
+                  <div class="form-popup" id="myForm2">
+                    <form method="post" class="form-container">
+                      <h3>Заповніть форму</h3>
+                      <p>Ми відповімо протягом двох хвилин</p>
+
+                      <label for="name2">Ім'я:</label>
+                      <input type="text" placeholder="Ваше ім'я" name="name" id="name2"
+                        pattern="^[а-яА-ЯёЁіІїЇa-zA-Z]+$" maxlength="50" required>
+
+                      <label for="phone2">Телефон:</label>
+                      <input type="tel" placeholder="Ваш номер телефону у форматі 380yyxxxxxxx" name="phone" id="phone2"
+                        pattern="380[0-9]{9}"
+                        title="Будь ласка, введіть номер телефону у форматі 380yyxxxxxxx, де y - двохзначний код мобільного оператора, x - семизначний номер телефону"
+                        required>
+
+                      <label for="mail2">Email:</label>
+                      <input type="email" placeholder="Ваш Email" name="mail" id="mail2"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" maxlength="50" required>
+
+                      <button type="submit" class="btn">Подати заявку</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Закрити</button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>15 - 22 жовтня 2022</td>
+                <td>2000 &#8364;</td>
+                <td>Залишилось 6 місць</td>
+                <td>
+                  <button class="open-button" onclick="openForm()">Подати заявку</button>
+
+                  <div class="form-popup" id="myForm3">
+                    <form method="post" class="form-container">
+                      <h3>Заповніть форму</h3>
+                      <p>Ми відповімо протягом двох хвилин</p>
+
+                      <label for="name3">Ім'я:</label>
+                      <input type="text" placeholder="Ваше ім'я" name="name" id="name3"
+                        pattern="^[а-яА-ЯёЁіІїЇa-zA-Z]+$" maxlength="50" required>
+
+                      <label for="phone3">Телефон:</label>
+                      <input type="tel" placeholder="Ваш номер телефону у форматі 380yyxxxxxxx" name="phone" id="phone3"
+                        pattern="380[0-9]{9}"
+                        title="Будь ласка, введіть номер телефону у форматі 380yyxxxxxxx, де y - двохзначний код мобільного оператора, x - семизначний номер телефону"
+                        required>
+
+                      <label for="mail3">Email:</label>
+                      <input type="email" placeholder="Ваш Email" name="mail" id="mail3"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" maxlength="50" required>
+
+                      <button type="submit" class="btn">Подати заявку</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Закрити</button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <section id="contact">
+        <div class="card mb-3">
+          <h2>Контакти</h2>
+          <div class="social">
+            <p>З нами Ви можете зв'язатись за телефоном, написати нам листа на email або обрати один із месенджерів:
+            </p>
+            <p><img src="static/img/phone.svg" alt="Телефон">: +380661000000</p>
+            <p><img src="static/img/mail.svg" alt="Пошта">: info@yourfaroe.ua</p>
+            <a href="#" class="social_icon social_facebook"><img src="static/img/facebook.svg" alt="Фейсбук"></a>
+            <a href="#" class="social_icon social_telegram"><img src="static/img/telegram.svg" alt="Телеграм"></a>
+            <a href="#" class="social_icon social_viber"><img src="static/img/viber.svg" alt="Вайбер"></a>
+            <a href="#" class="social_icon social_whatsapp"><img src="static/img/whatsapp.svg" alt="Ватсапп"></a>
+            <a href="#" class="social_icon social_instagram"><img src="static/img/instagram.svg" alt="Інстаграм"></a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&#169; Your Faroe 2022</p>
+    <p>Всі матеріали сайту належать компанії Your Faroe. Щодо співробітництва та використання матеріалів пишіть на
+      info@yourfaroe.ua</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="static/script.js"></script>
+</body>
+
+</html>

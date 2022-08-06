@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: circle;
+}
+
+.bcground {
+  background-image: url("../static/img/1.webp");
+  background-color: #cccccc;
+  height: 93vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.mb-3 {
+  padding: 20px;
+}
+
+.col-md-8 {
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.content1 {
+  display: table-cell;
+  padding: 60px 60px;
+}
+
+.content2 {
+  display: table-cell;
+  padding: 60px 60px;
+}
+
+.navbar {
+  z-index: 9;
+}
+
+.description {
+  margin: 30px;
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 8;
+}
+
+footer {
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  text-align: center;
+}
+
+.guide {
+  height: 100vh;
+}
+
+h1 {
+  display: block;
+  font-family: 'Source Sans Pro';
+  letter-spacing: 3.09px;
+  font-size: 4rem;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  padding-bottom: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+td {
+  text-align: center;
+}
+
+.open-button {
+  background-color: rgb(0, 0, 90);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 600px;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container input[type=text],
+.form-container input[type=tel],
+.form-container input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 30px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=tel]:focus
+.form-container input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: rgb(0, 0, 90);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
